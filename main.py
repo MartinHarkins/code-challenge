@@ -107,7 +107,8 @@ def find_in_text(mypath, wordlist):
 		sentence_tokenizing(wordlist, sentences, file_name, title)
 			
 def main():
-	mypath = "/home/teitoku/code-challenge/"
+	mypath = os.path.dirname(os.path.abspath(__file__))
+	nltk.download('punkt')
 
 	key = "JcEIAPhvmN8t4YMkTSN7"
 
